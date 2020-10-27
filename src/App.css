@@ -1,38 +1,106 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
+
+.questions{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.answers{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.answers-dis{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.questions-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.answerButton{
+  background-color: #465b15;
+  color: #fff;
+  font-size: large;
+  width: 23%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.questionaire{
+  bottom: 40%;
+  background-color: #f3d035;
+  position: absolute;
+  height: 25vh;
+  width: 100vw;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: space-between;
+  justify-content: space-around;
+  align-content: center;
+  border: 3px solid #465b15;
 }
 
-.App-link {
-  color: #61dafb;
+.window-ON{
+  position: absolute;
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: xx-large;
+  border: 5px solid #465b15;
+  background-color: #f3d035;
+  padding: 20px;
+  margin-top: -5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-answer{
+  text-align: center;
+}
+
+.window-OFF{
+  position: absolute;
+  display: flex;
+  width: 25%;
+  justify-content: space-around;
+  font-size: xx-large;
+  border: 5px solid #465b15;
+  background-color: #f3d035;
+  padding: 20px;
+  margin-top: -5%;
+  display: none;
+}
+
+/* .next-question */button{
+  background-color: #465b15;
+  font-size: x-large;
+  color: #fff;
+  transition: background-color 100ms;
+}
+
+.again{
+  margin-top: -7%;
+  height: 16vh;
+}
+
+button:hover{
+  background-color: #64b00c; 
+}
+
+button:disabled{
+  background-color: #295007;
 }
