@@ -109,7 +109,7 @@ function App(props) {
       <div className="questions-text">
         {questions[questionNumber].questionText}
         <div className={endWindow === true ? "window-ON again" : "window-OFF"}>
-          <span className="right-answer"> Wanna play Again???</span>
+          <span className="right-answer"> Score: {score}<br>Wanna play Again???</span>
           <button /* className="next-question"  */id="play-again" onClick={() => reset()}>Yes</button>
           {/* <button className="next-question" onClick={() => setEndWindow(false)}>No</button> */}
         </div>
